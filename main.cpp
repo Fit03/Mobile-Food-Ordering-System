@@ -2,7 +2,7 @@
 #include <iomanip>              // Set width library
 #include <ctime>                // Date and time library
 #include <string>
-#include <windows.h>
+#include <windows.h>            // Set console color and sleep library
 #include "stack.h"              // Stack header
 #include "linkedList.h"         // Linkedlist header
 #include "sorting.h"            // Sorting header
