@@ -1,7 +1,8 @@
 #include <iostream>             // IO library
 #include <iomanip>              // Set width library
 #include <ctime>                // Date and time library
-#include <string>               
+#include <string>
+#include <windows.h>
 #include "stack.h"              // Stack header
 #include "linkedList.h"         // Linkedlist header
 #include "sorting.h"            // Sorting header
