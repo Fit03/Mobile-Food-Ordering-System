@@ -160,7 +160,7 @@ void Summary() {
         cout << "\t\t1. Undo last order\n";
         cout << "\t\t2. Remove a specific order\n";
         cout << "\t\t3. Add a new order\n";
-        cout << "\t\t4. Exit summary and proceed to receipt\n"; // Updated message
+        cout << "\t\t4. Exit summary and proceed to receipt\n";
         cout << "\t\tEnter your choice (1/2/3/4): ";
         cin >> option;
 
