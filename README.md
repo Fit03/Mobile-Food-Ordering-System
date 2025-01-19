@@ -21,6 +21,6 @@ This project demonstrates the following key data structures and algorithms:
 ## How to Run the Project
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/Mobile-Food-Ordering-System.git
+   git clone https://github.com/Fit03/Mobile-Food-Ordering-System.git
 2. Open the project in your preferred C++ IDE (such as Code::Blocks, Visual Studio, or Dev-C++).
 3. Compile and run the program.
