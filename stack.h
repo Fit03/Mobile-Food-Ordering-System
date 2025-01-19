@@ -1,4 +1,5 @@
 #include <iostream>     // IO library
+using namespace std;
 
 class Stack {
 public:
@@ -31,7 +32,7 @@ void Stack::Push(int Value) {
     if (CurrentPosition < MaxCapacity - 1) {
         Array[++CurrentPosition] = Value;
     } else {
-        std::cout << "Stack Overflow" << std::endl;
+        cout << "Stack Overflow" << endl;
     }
 }
 
@@ -40,7 +41,7 @@ int Stack::Pop() {
     if (CurrentPosition >= 0) {
         return Array[CurrentPosition--];
     }
-    std::cout << "Stack underflow" << std::endl;
+    cout << "Stack underflow" << endl;
     return -1;
 }
 
@@ -49,6 +50,6 @@ int Stack::Top() {
     if (CurrentPosition >= 0) {
         return Array[CurrentPosition];
     }
-    std::cout << "Stack underflow" << std::endl;
+    cout << "Stack underflow" << endl;
     return -1;
 }
