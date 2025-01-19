@@ -23,7 +23,7 @@ void Title();
 void Summary();
 void Order();
 void Menu();
-const std::string currentDateTime();
+const string currentDateTime();
 void clr();
 
 // Title function
@@ -276,7 +276,7 @@ void clr() {
 }
 
 // Function to get the current date and time
-const std::string currentDateTime() {
+const string currentDateTime() {
     time_t now = time(0);
     struct tm tstruct;
     char buf[80];
