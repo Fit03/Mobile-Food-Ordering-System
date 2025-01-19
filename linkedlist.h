@@ -2,6 +2,7 @@
 #include <iomanip>      // Set width library
 #include <string>
 #include <windows.h>    // Set console color and sleep library
+using namespace std;
 
 class Node {
 public:
@@ -54,24 +55,24 @@ public:
         }
     }
 
-    void displayOrders(std::string items[], float prices[]) {
+    void displayOrders(string items[], float prices[]) {
         Node* temp = head;
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-        std::cout << "\t\t----------------------------------------------------------------\n";
-        std::cout << "\t\t" << std::left << std::setw(10) << "Product No" 
-                  << std::setw(10) << "Quantity" 
-                  << std::setw(25) << "Item" 
-                  << std::setw(15) << "Unit Price" 
-                  << std::setw(15) << "Total Price" << std::endl;
-        std::cout << "\t\t----------------------------------------------------------------\n";
+        cout << "\t\t----------------------------------------------------------------\n";
+        cout << "\t\t" << left << setw(10) << "Product No" 
+                  << setw(10) << "Quantity" 
+                  << setw(25) << "Item" 
+                  << setw(15) << "Unit Price" 
+                  << setw(15) << "Total Price" << endl;
+        cout << "\t\t----------------------------------------------------------------\n";
         while (temp) {
-            std::cout << "\t\t" << std::left << std::setw(10) << (temp->orderIndex + 1) // Display product number
-                      << std::setw(10) << temp->quantity 
-                      << std::setw(25) << items[temp->orderIndex] 
-                      << std::setw(15) << std::fixed << std::setprecision(2) << prices[temp->orderIndex]
-                      << std::setw(15) << std::fixed << std::setprecision(2) << temp->quantity * prices[temp->orderIndex] << "\n";
+            cout << "\t\t" << left << setw(10) << (temp->orderIndex + 1) // Display product number
+                      << setw(10) << temp->quantity 
+                      << setw(25) << items[temp->orderIndex] 
+                      << setw(15) << fixed << setprecision(2) << prices[temp->orderIndex]
+                      << setw(15) << fixed << setprecision(2) << temp->quantity * prices[temp->orderIndex] << "\n";
             temp = temp->next;
         }
-        std::cout << "\t\t----------------------------------------------------------------\n";
+        cout << "\t\t----------------------------------------------------------------\n";
     }
 };
