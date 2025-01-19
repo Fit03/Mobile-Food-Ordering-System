@@ -1,6 +1,7 @@
 #include <string>
+using namespace std;
 
-void BubbleSort(int quantities[], std::string items[], float prices[], int size) {
+void BubbleSort(int quantities[], string items[], float prices[], int size) {
     for (int i = 0; i < size - 1; i++) {
         for (int j = 0; j < size - i - 1; j++) {
             if (quantities[j] > quantities[j + 1]) {
@@ -10,7 +11,7 @@ void BubbleSort(int quantities[], std::string items[], float prices[], int size)
                 quantities[j + 1] = tempQty;
 
                 // Swap items
-                std::string tempItem = items[j];
+                string tempItem = items[j];
                 items[j] = items[j + 1];
                 items[j + 1] = tempItem;
 
